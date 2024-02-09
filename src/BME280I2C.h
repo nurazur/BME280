@@ -69,7 +69,8 @@ public:
    BME280I2C(
       const Settings& settings = Settings());
 
-
+   // virtual destructor to avoid warning
+   virtual ~BME280I2C(){}
 /*****************************************************************/
 /* ACCESSOR FUNCTIONS                                            */
 /*****************************************************************/
